@@ -8,47 +8,22 @@ import Menu from "./Menu";
 import { menuActions } from "../app/menuSlice";
 import HomeImage from "./HomeImage";
 import rect from "./rect.svg";
+import ana2 from '../Images/ana2-anna-evreva.jpg'
+
+
 
 const HomeImageContainer = (props) => {
   const dispatch = useDispatch();
 
-  const currentImageNumber = useSelector(
-    (state) => state.homeImage.currentImageNumber
-  );
+  
 
-  const fetchImages = async () => {
-    const ab = await axios.get(
-      `https://api.unsplash.com/photos/random?client_id=IsEWcxRXjoehAh5HAFgAlm0i1NMsEBKa44UmU2i0_4I&count=20&query=nature&page=1&per_page=10`
-    );
-    console.log("ab is ", ab);
-    const urls = ab.data;
-    for (let i = 0; i < 20; i++) {
-      dispatch(homeImageActions.setImageURLs(urls[i].urls.full));
 
-      if (i === currentImageNumber) {
-        dispatch(homeImageActions.setSelectedImage(urls[i].urls.regular));
-        dispatch(
-          homeImageActions.setCurrentImageNumber(currentImageNumber + 1)
-        );
-      }
-    }
-  };
 
-  useEffect(() => {
-    dispatch(menuActions.setMenuIsVisible(false));
-
-    fetchImages();
-  }, []);
 
   const menuIsVisible = useSelector((state) => state.menu.menuIsVisible);
 
-  useEffect(() => {
-    dispatch(menuActions.setMenuIsVisible(false));
 
-    setTemp(true);
-  }, []);
 
-  const [temp, setTemp] = useState(true);
 
   return (
     <div>
