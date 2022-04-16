@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import homeImageReducer from './homeImageSlice'
+import menuReducer from './menuSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+   homeImage: homeImageReducer,
+   menu:menuReducer,
   },
 });
+ 
+export default store;

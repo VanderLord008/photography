@@ -1,0 +1,19 @@
+.image{
+  background-size: cover !important;
+  height: 260px;
+  width: 260px;
+  box-sizing: border-box;
+  border: 22px solid white;
+}
+
+.image img{
+  height: 260px;
+  width: 260px;
+  background-size: cover !important;
+}
+
+.image:hover{
+
+  cursor: pointer;
+
+}

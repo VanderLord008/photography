@@ -1,0 +1,17 @@
+
+/* auto|length|cover|contain|initial|inherit; */
+.image{
+    
+    width: 100%;
+ z-index: 0;
+    height: calc(100vh - 84px);
+}
+
+.image img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+   
+}

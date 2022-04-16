@@ -1,0 +1,43 @@
+.header{
+    width: 100vw;
+    color: black;
+    background-color: #f5f5f5;
+    height: 42px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.header p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 5px;
+  
+
+}
+.header span{
+  color: black;
+  position: absolute;
+  right: 11px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+.header span span{
+  text-align: center;
+  
+  font-size: 12px;
+  right: 28px;
+}
+
+span:hover{
+  color: green;
+}
+
+.item p{
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,32 @@
+.imageContainer{
+   
+
+    background-color: #1a1717;
+    display: grid;
+    grid-template-columns:42px 1fr 42px ;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+
+}
+
+.gridItem2{
+    background-color: #1a1717;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 6px 6px;
+    place-items: center;
+
+
+    
+}
+.gridItem1{
+    background-color: #f5f5f5;
+
+}
+
+.gridItem3{
+    background-color: #f5f5f5;
+    z-index: 2;
+
+}
+

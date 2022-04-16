@@ -1,0 +1,45 @@
+.container{
+    width: 10em;
+    height: calc(100vh - 84px);
+
+    right: 42px;
+top:42px;
+    color: white;
+    background-color: #1a1717;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title span{
+    padding-top: 2rem;
+    font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+ text-decoration: none;
+  
+}
+
+.title span:hover{
+    color: green !important;
+    cursor: pointer;
+
+}
+
+
+
+.title p{
+    font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.title span{
+    font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
